@@ -5,14 +5,7 @@ import React from 'react';
 const About = () => {
     const message = "Hello world!"
     return (
-  <h1>About page - {message}</h1>
- )
-
-
-// function About() {
-//    return (
-//      <h1>About page</h1>
-//        )
+      <h1>About page - {message}</h1>
+    )
 }
-
-export default About
+    export default About

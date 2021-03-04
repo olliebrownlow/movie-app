@@ -1,7 +1,18 @@
+import React from 'react';
 
 
-const About = () => (
-    <h1>About page</h1>
-)
+// functional component
+const About = () => {
+    const message = "Hello world!"
+    return (
+  <h1>About page - {message}</h1>
+ )
+
+
+// function About() {
+//    return (
+//      <h1>About page</h1>
+//        )
+}
 
 export default About

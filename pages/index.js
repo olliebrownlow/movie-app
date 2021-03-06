@@ -4,7 +4,7 @@ import Navbar from '../components/navbar'
 import Sidebar from '../components/sidebar'
 import Carousel from '../components/carousel'
 import MovieList from '../components/movieList.js'
-
+import Footer from '../components/footer.js'
 
 export default function Home() {
   return (
@@ -38,11 +38,8 @@ export default function Home() {
       </div>
     </div>
   </div>
-  <footer className="py-5 bg-dark">
-    <div className="container">
-      <p className="m-0 text-center text-white">Copyright © Your Website 2019</p>
-    </div>
-  </footer>
+  
+  <Footer />
     </div>
   )
 }

@@ -1,57 +1,26 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Navbar from '../components/navbar'
+import Sidebar from '../components/sidebar'
 
 export default function Home() {
   return (
     <div>
-
-    <Head>
+      <Head>
       <title>Home</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossOrigin="anonymous" />
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossOrigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossOrigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossOrigin="anonymous"></script>
     </Head>
- 
-   <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div className="container">
-      <a className="navbar-brand" href="#">Start Bootstrap</a>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarResponsive">
-        <ul className="navbar-nav ml-auto">
-          <li className="nav-item active">
-            <a className="nav-link" href="#">Home
-              <span className="sr-only">(current)</span>
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">About</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">Services</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    
+    <Navbar />
  
   <div className="container">
     <div className="row">
  
       <div className="col-lg-3">
- 
-        <h1 className="my-4">Shop Name</h1>
-        <div className="list-group">
-          <a href="#" className="list-group-item">Category 1</a>
-          <a href="#" className="list-group-item">Category 2</a>
-          <a href="#" className="list-group-item">Category 3</a>
-        </div>
- 
+        <Sidebar />
       </div>
  
       <div className="col-lg-9">

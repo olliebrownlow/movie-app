@@ -6,6 +6,11 @@ class MovieList extends React.Component {
   render() {
     return (
       <>
+        <div>
+          <button className="btn btn-primary">Increment number</button>
+          <button className="btn btn-primary">Decrement number</button>
+        </div>
+
         <div className="col-lg-4   col-md-6 mb-4">
           <div className="card h-100">
             <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt="" /></a>

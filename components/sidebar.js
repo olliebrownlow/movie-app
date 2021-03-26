@@ -1,17 +1,6 @@
 import { useState } from 'react'
 
-const Sidebar = () => {
-  const [ count, setCount ] = useState(0)
-
-  const increment = () => {
-    const newCount = count + 1
-    setCount(newCount)
-  }
-  
-  const decrement = () => {
-    const newCount = count - 1
-    setCount(newCount)
-  }
+const Sidebar = (props) => {
 
   return (
     <div>
@@ -22,10 +11,8 @@ const Sidebar = () => {
         <a href="#" className="list-group-item">Category 3</a>
       </div>
       <div>
-        <button onClick={increment} className="btn btn-primary">Increment number</button>
-        <button onClick={decrement} className="btn btn-primary">Decrement number</button>
-          
-        <h1>{count}</h1>
+         
+        <h1>{props.count}</h1>
       </div>  
     </div>
   )

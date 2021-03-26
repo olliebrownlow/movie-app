@@ -37,7 +37,10 @@ export default function Home() {
         <button onClick={decrement} className="btn btn-primary">Decrement number</button>
         <div className="row"> 
           <div className="col-lg-3">
-            <Sidebar count={count} />
+            <Sidebar
+              count={count}
+              appName={"Movie DB"}
+            />
           </div>
           <div className="col-lg-9">
             <Carousel />

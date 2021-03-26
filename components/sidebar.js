@@ -9,11 +9,7 @@ const Sidebar = (props) => {
         <a href="#" className="list-group-item">Category 1</a>
         <a href="#" className="list-group-item">Category 2</a>
         <a href="#" className="list-group-item">Category 3</a>
-      </div>
-      <div>
-         
-        <h1>{props.count}</h1>
-      </div>  
+      </div> 
     </div>
   )
 }

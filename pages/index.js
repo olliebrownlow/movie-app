@@ -60,7 +60,9 @@ export default function Home() {
           <div className="col-lg-9">
             <Carousel />
             <div className="row">
-              <MovieList />
+              <MovieList 
+                movies={MOVIE_DATA}
+              />
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/navbar'
 import Sidebar from '../components/sidebar'
@@ -9,8 +9,20 @@ import Footer from '../components/footer.js'
 import { getMovies } from '../actions'
 
 export default function Home() {
+  const[movies, setMovies] = useState([])
 
-  const movies = getMovies()
+  useEffect(() => {
+    const fetchData = async () => {
+      const resMovies = await getMovies()
+      setMovies(resMovies)
+    }
+
+    fetchData()
+
+    // getMovies().then((movies) => {
+      // setMovies(movies)
+    // })  
+  }, [])
 
   return (
     <div>

@@ -139,7 +139,6 @@ const Home = (props) => {
 
 Home.getInitialProps = async () => {
   const movies = await getMovies()
-
   return {
     movies
   }

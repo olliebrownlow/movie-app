@@ -6,7 +6,8 @@ const Carousel = (props) => {
     <div id="carouselExampleIndicators" className="carousel slide my-4" data-ride="carousel">
       <ol className="carousel-indicators">
         { images.map((image, index) => (
-            <li 
+            <li
+              key={image.id} 
               data-target="#carouselExampleIndicators" 
               data-slide-to={index} 
               className={index === 0 ? "active" : ''}>
@@ -17,8 +18,8 @@ const Carousel = (props) => {
       </ol>
       <div className="carousel-inner" role="listbox">
         { images.map((image, index) => (
-            <div className={index === 0 ? "carousel-item active" : 'carousel-item'}>
-              <img 
+            <div key={image.id} className={index === 0 ? "carousel-item active" : 'carousel-item'}>
+              <img
                 className="d-block img-fluid" 
                 src={image.url} 
                 alt={image.name} 

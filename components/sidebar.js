@@ -1,4 +1,5 @@
 import Modal from './modal'
+import CreateMovieForm from './createMovieForm'
 
 const Sidebar = (props) => {
 
@@ -6,7 +7,9 @@ const Sidebar = (props) => {
 
   return (
     <div>
-      <Modal />
+      <Modal>
+        <CreateMovieForm />
+      </Modal>
       <h1 className="my-4">{props.appName}</h1>
       <div className="list-group">
         { categories.map((category) => (

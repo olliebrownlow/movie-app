@@ -1,7 +1,14 @@
 import { useState } from "react";
 
 const CreateMovieForm = (props) => {
-  const [form, setForm] = useState({});
+  const [form, setForm] = useState({
+    name: "",
+    description: "",
+    rating: "",
+    image: "",
+    cover: "",
+    longDesc: "",
+  });
 
   const handleChange = (event) => {
     const target = event.target;
@@ -31,7 +38,7 @@ const CreateMovieForm = (props) => {
   };
 
   const submitForm = () => {
-    props.handleFormSubmit({...form})
+    props.handleFormSubmit({ ...form });
   };
 
   return (

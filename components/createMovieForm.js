@@ -44,7 +44,7 @@ const CreateMovieForm = (props) => {
   return (
     <form>
       <div className="form-group">
-        <label for="name">Name</label>
+        <label htmlFor="name">Name</label>
         <input
           onChange={handleChange}
           value={form.name}
@@ -57,7 +57,7 @@ const CreateMovieForm = (props) => {
         />
       </div>
       <div className="form-group">
-        <label for="description">Description</label>
+        <label htmlFor="description">Description</label>
         <input
           onChange={handleChange}
           value={form.description}
@@ -69,7 +69,7 @@ const CreateMovieForm = (props) => {
         />
       </div>
       <div className="form-group">
-        <label for="rating">Rating</label>
+        <label htmlFor="rating">Rating</label>
         <input
           onChange={handleChange}
           value={form.rating}
@@ -86,7 +86,7 @@ const CreateMovieForm = (props) => {
         </small>
       </div>
       <div className="form-group">
-        <label for="image">Image</label>
+        <label htmlFor="image">Image</label>
         <input
           onChange={handleChange}
           value={form.image}
@@ -98,7 +98,7 @@ const CreateMovieForm = (props) => {
         />
       </div>
       <div className="form-group">
-        <label for="cover">Cover</label>
+        <label htmlFor="cover">Cover</label>
         <input
           onChange={handleChange}
           value={form.cover}
@@ -110,7 +110,7 @@ const CreateMovieForm = (props) => {
         />
       </div>
       <div className="form-group">
-        <label for="longDesc">Long Description</label>
+        <label htmlFor="longDesc">Long Description</label>
         <textarea
           onChange={handleChange}
           value={form.longDesc}
@@ -121,7 +121,7 @@ const CreateMovieForm = (props) => {
         ></textarea>
       </div>
       <div className="form-group">
-        <label for="genre">Genre</label>
+        <label htmlFor="genre">Genre</label>
         <select
           onChange={handleGenreChange}
           multiple

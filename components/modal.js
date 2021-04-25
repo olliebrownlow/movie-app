@@ -7,6 +7,7 @@ class Modal extends React.Component {
   }
 
   closeModal() {
+    debugger
     this.closeButton.click();
   }
 

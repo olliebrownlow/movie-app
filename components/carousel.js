@@ -39,7 +39,7 @@ const Carousel = (props) => {
       </a>
       <style jsx>{`
           .carousel-item {
-              max-height: 400px;
+              max-height: 180px;
             }
         `}
       </style>

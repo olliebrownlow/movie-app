@@ -24,14 +24,9 @@ export const getMovies = () => {
 };
 
 export const createMovie = (movie) => {
-  return new Promise((resolve, reject) => {
-    movie.id = Math.random().toString(36).substr(2, 7);
-    MOVIE_DATA.push(movie);
-    setTimeout(() => {
-      resolve(MOVIE_DATA);
-      reject("Cannot Sfetch data!");
-    }, 50);
-  });
+  movie.id = Math.random().toString(36).substr(2, 7);
+
+  return axios.post(`${BASE_URL}/api/v1/movies`, movie).then((res) => res.data);
 };
 
 export const getMovieById = (id) => {

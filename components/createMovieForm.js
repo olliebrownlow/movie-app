@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 const CreateMovieForm = (props) => {
-
   const defaultData = {
     name: "",
     description: "",
@@ -9,9 +8,9 @@ const CreateMovieForm = (props) => {
     image: "",
     cover: "",
     longDesc: "",
-  }
+  };
 
-  const formData = props.initialData ? {...props.initialData} : defaultData
+  const formData = props.initialData ? { ...props.initialData } : defaultData;
 
   const [form, setForm] = useState(formData);
 
@@ -141,7 +140,7 @@ const CreateMovieForm = (props) => {
         </select>
       </div>
       <button onClick={submitForm} type="button" className="btn btn-primary">
-        Create
+        {props.updateButtonText || "Create"}
       </button>
     </form>
   );

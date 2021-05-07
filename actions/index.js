@@ -1,9 +1,9 @@
 import axios from "axios";
 
 const BASE_URL = "http://localhost:3000";
-const MOVIE_DATA = [];
 
 const CATEGORY_DATA = [
+  { id: "c-0", name: "all" },
   { id: "c-1", name: "drama" },
   { id: "c-2", name: "action" },
   { id: "c-3", name: "adventure" },
